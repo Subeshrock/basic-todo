@@ -27,7 +27,7 @@ function TodoForm({ editItem, setEditItem }) {
       methods.setValue("description", editItem.description);
       methods.setValue("category", editItem.category);
     }
-  }, [editItem]);
+  }, [editItem, methods]);
 
   const editTodo = (data) => {
     const updatedItem = {
